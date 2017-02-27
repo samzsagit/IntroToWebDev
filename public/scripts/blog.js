@@ -1,5 +1,5 @@
 // var theURL= 'http://localhost:3000';
-var theURL = 'https://csse280-term-project-backend.herokuapp.com'
+var theURL = 'https://rhitktpwebsite.herokuapp.com'
 var posts;
 
 function setUpBlog() {

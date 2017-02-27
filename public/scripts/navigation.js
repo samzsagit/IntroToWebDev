@@ -2,7 +2,7 @@ var publicLinks = [["/", "Home"], ["/about", "About"], ["/rush", "Rush"], ["/exe
 var privateLinks = [["/schedule", "Schedule"],["/trees","Trees"]];
 
 function mainNavigation() {
-	var url = 'https://csse280-term-project-backend.herokuapp.com';
+	var url = 'https://rhitktpwebsite.herokuapp.com';
 	// var url = 'http://localhost:3000';
 
 	$.ajax({

@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/astronauticalAuthor/IntroToWebDev.git"
+    "url": "git+https://github.com/Trinitok/IntroToWebDev.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/astronauticalAuthor/IntroToWebDev/issues"
+    "url": "https://github.com/Trinitok/IntroToWebDev/issues"
   },
-  "homepage": "https://github.com/astronauticalAuthor/IntroToWebDev#readme",
+  "homepage": "https://github.com/Trinitok/IntroToWebDev#readme",
   "dependencies": {
     "body-parser": "^1.15.2",
     "consolidate": "^0.14.1",

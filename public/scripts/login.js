@@ -1,5 +1,5 @@
 function login() {
-	var url = 'https://csse280-term-project-backend.herokuapp.com';
+	var url = 'https://rhitktpwebsite.herokuapp.com';
 	// url = '';
 	$.ajax({
 		url: url + '/login/login',
