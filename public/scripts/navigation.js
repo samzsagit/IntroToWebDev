@@ -1,5 +1,5 @@
-var publicLinks = [["/", "Home"], ["/about", "About"], ["/rush", "Rush"], ["/executives","Executives"],["/blog","Blog"]];
-var privateLinks = [["/schedule", "Schedule"],["/trees","Trees"]];
+var publicLinks = [["/", "Home"], ["/about", "About"], ["/rush", "Rush"], ["/executives","Executives"],["/blog","Blog"], ["/profdev","Requirements"]];
+var privateLinks = [["/schedule", "Schedule"],["/trees","Trees"], ["/newuser","Register"]];
 
 function mainNavigation() {
 	var url = 'https://rhitktpwebsite.herokuapp.com';
@@ -54,4 +54,5 @@ function initLinks(isLoggedOn){
 
 function logout() {
 	document.cookie = '';
+	document.location.href = "https://rhitktpwebsite.herokuapp.com/login";
 }
