@@ -1,6 +1,7 @@
 "use strict";
 
 $(document).ready(function() {
+    var theURL = 'https://rhitktpwebsite.herokuapp.com';
     $.ajax({
         url: theURL + '/login/login/checkLoggedIn',
         method: 'POST',
@@ -60,6 +61,7 @@ $(document).ready(function() {
             }
         });
             }
+            // if not logged in
         else {
             document.location.href = "https://rhitktpwebsite.herokuapp.com/login";
         }

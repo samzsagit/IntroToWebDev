@@ -15,6 +15,9 @@ function startTree() {
 	$.ajax({
         url: theURL + '/users'
     }).done(function (data){
+        if(data.loggedIn == "true"){
+            alert("im logged");
+        }
 		nodes = new vis.DataSet();
 		edges = new vis.DataSet();
 
