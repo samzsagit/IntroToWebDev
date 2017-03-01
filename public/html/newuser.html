@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Kappa Theta Pi
+        </title>
+        <link href="styles/style.css" rel="stylesheet" type="text/css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+        </script>
+        <script src="../scripts/navigation.js">
+        </script>
+        <script src="../scripts/newuser.js" type="text/javascript">
+        </script>
+    </head>
+    <body onload="mainNavigation()">
+        <div id="banner">
+            <div id="topbanner">
+                Kappa Theta Pi
+            </div>
+            <div id="bottombanner">
+            </div>
+            <!-- script loads depending on login -->
+        </div>
+        <div id="contentarea">
+            <div id="main">
+                <br/>
+                <br/>
+                <br/>
+                <form action="" class="form-horizontal" method="post">
+                    <div class="form-group">
+                        <label class="col-sm-offset-2 col-sm-2 control-label" for="name">
+                            Name:
+                        </label>
+                        <div class="col-sm-4">
+                            <input class="form-control" id="name" maxlength="50" name="name" placeholder="Name" required="" title="This is required" type="text">
+                            </input>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-offset-2 col-sm-2 control-label" for="username">
+                            Username:
+                        </label>
+                        <div class="col-sm-4">
+                            <input class="form-control" id="username" maxlength="30" name="username" placeholder="Username" required="" title="This is required" type="text">
+                            </input>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-offset-2 col-sm-2 control-label" for="gradYear">
+                            Graduation Year:
+                        </label>
+                        <div class="col-sm-4">
+                            <select class="form-control" id="gradYear" name="gradYear" placeholder="Graduation Year" required="" title="This is required">
+                                <option value="2016">
+                                    2016
+                                </option>
+                                <option value="2017">
+                                    2017
+                                </option>
+                                <option value="2018">
+                                    2018
+                                </option>
+                                <option value="2019">
+                                    2019
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-offset-2 col-sm-2 control-label" for="password">
+                            Password:
+                        </label>
+                        <div class="col-sm-4">
+                            <input class="form-control" id="password" maxlength="100" name="password" placeholder="Password" required="" title="This is required" type="password">
+                            </input>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-offset-2 col-sm-2 control-label" for="confirmpassword">
+                            Confirm Password:
+                        </label>
+                        <div class="col-sm-4">
+                            <input class="form-control" id="confirmpassword" maxlength="100" name="confirmpassword" placeholder="Confirm Password" required="" title="This is required" type="password">
+                            </input>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-4 col-sm-4">
+                            <button class="btn btn-primary" id="Register" type="submit">
+                                Register
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

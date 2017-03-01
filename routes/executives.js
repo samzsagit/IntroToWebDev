@@ -5,12 +5,14 @@ var router = express.Router();
 router.get('/', function(req, res) {
   res.send({
     "Advisor": "Aaron Wilkin",
-  	"President": "Natasha Tepley",
-  	"Vice President": "Brooke Brown",
-  	"Treasurer": "Adam Finer",
-  	"Director of Social Engagement": "Haley Heshelman",
-  	"Director of Professional Development": "Jamie Loving",
-  	"Director of Technology": "Katrina Kerrick"
+  	"President": "Adam Finer",
+  	"Vice President": "Jaron Goodman",
+  	"Secretary": "Jenna Wohlpart",
+  	"Treasurer": "Alex P",
+  	"Director of Social Engagement": "Natasha Tepley",
+  	"Director of Professional Development": "Carl",
+  	"Director of Technology": "Max Kelly",
+  	"Director of Management": "Walter"
 	});
 });
 
