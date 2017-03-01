@@ -55,4 +55,6 @@ function initLinks(isLoggedOn){
 function logout() {
 	document.cookie = '';
 	document.location.href = "https://rhitktpwebsite.herokuapp.com/login";
+	window.location.href = "https://rhitktpwebsite.herokuapp.com/login";
+	alert("logging out");
 }

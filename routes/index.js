@@ -2,6 +2,7 @@ var express = require('express');
 var path = require('path');
 var router = express.Router();
 
+
 router.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, '..', '/public/html/index.html'));
 });
@@ -32,6 +33,14 @@ router.get('/trees', function(req, res) {
 
 router.get('/login', function(req, res) {
 	res.sendFile(path.join(__dirname, '..', 'public/html/login.html'));
+});
+
+router.get('/newuser', function(req, res) {
+	res.sendFile(path.join(__dirname, '..', 'public/html/newuser.html'));
+});
+
+router.get('/profdev', function(req, res) {
+	res.sendFile(path.join(__dirname, '..', 'public/html/profdev.html'));
 });
 
 module.exports = router;
