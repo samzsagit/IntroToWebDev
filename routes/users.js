@@ -19,4 +19,22 @@ router.get('/', function(req, res) {
     });
 });
 
+router.post('/', function (req, res) {
+    mongoose.model('User').create({
+        username: req.body.username,
+        password: req.body.password,
+        alumnusStatus: false,
+        profPoints: 0,
+        littles: [],
+        initiationClass: 3,
+        gradYear: req.body.gradYear
+    }, function (err, post) {
+        if (err) {
+            res.send('Problem adding post to db');
+        } else {
+            res.redirect('/blog');
+        }
+    });
+})
+
 module.exports = router;
