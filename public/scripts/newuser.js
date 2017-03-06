@@ -31,7 +31,7 @@ $(document).ready(function() {
                                 data: {
                                     username: $("#username").val(),
                                     password: $("#password").val(),
-                                    alumnusStatus: $("#email").val(),
+                                    alumnusStatus: false,
                                     profPoints: 0,
                                     littles: [],
                                     initiationClass: 3,
