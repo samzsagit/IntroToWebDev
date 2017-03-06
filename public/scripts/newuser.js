@@ -24,7 +24,7 @@ $(document).ready(function() {
                     event.stopPropagation();
                     console.log("Registering new user:");
                     if (/\S/.test($("#name").val()) && /\S/.test($("#username").val()) && /\S/.test($("#password").val())) {
-                        if ($("#email").val().indexOf("@") >= 0 && $("#email").val().indexOf(".") >= 0) {
+                        
                             $.ajax({
                                 url: url + '/login/login',
                                 type: "POST",
@@ -51,9 +51,7 @@ $(document).ready(function() {
                                 },
                                 complete: function(data) {}
                             });
-                        } else {
-                            alert("Must be a valid email format something@me.com");
-                        }
+                        
                     } else {
                         alert("There cannot just be spaces.  You must have at least 1 character");
                     }

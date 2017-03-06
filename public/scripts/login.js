@@ -10,7 +10,7 @@ function login() {
 		}
 	}).done(function (data) {
 		if (data.loggedIn == "true") {
-			document.cookie = data.guid;
+			document.cookie = data.guid;  // not secure.  every user has their own uid which means that it wil generate same cookies for users
 			window.location.replace('/');
 		}
 	});

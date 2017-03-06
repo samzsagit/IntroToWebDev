@@ -56,5 +56,4 @@ function logout() {
 	document.cookie = '';
 	document.location.href = "https://rhitktpwebsite.herokuapp.com/";
 	window.location.href = "https://rhitktpwebsite.herokuapp.com/";
-	alert("logging out");
 }

@@ -14,6 +14,20 @@
 	</head>
 
 	<body onload="mainNavigation();">
+		<script type="text/javascript">
+	        var theURL = 'https://rhitktpwebsite.herokuapp.com';
+		    $.ajax({
+		        url: theURL + '/login/login/checkLoggedIn',
+		        method: 'POST',
+		        data: {
+		            guid: document.cookie
+		        }
+		    }).done(function (data) {
+		        if (!data.loggedIn) {
+		        	document.location.href = "https://rhitktpwebsite.herokuapp.com/login";
+		        }
+		    });
+	    </script>
 		<div id="banner">
 			<div id="topbanner">Kappa Theta Pi</div>
 			<div id="bottombanner"></div> 

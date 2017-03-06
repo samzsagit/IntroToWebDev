@@ -1,27 +1,47 @@
 <!DOCTYPE html>
-
 <html>
-
-	<head>
-		<title>Kappa Theta Pi</title>
-		<link rel="stylesheet" type="text/css" href="styles/style.css" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="../scripts/navigation.js"></script>
-	</head>
-
-	<body onload="mainNavigation()";>
-		<div id="banner">
-			<div id="topbanner">Kappa Theta Pi</div>
-			<div id="bottombanner"></div> <!-- //script hits it -->
-		</div>
-
-		<div id="contentarea">
-			<p>Below is the calendar of all required and unrequired events hosted by KTP.</p>
-
-			<iframe src="https://calendar.google.com/calendar/embed?src=tepleyna%40gmail.com&ctz=America/New_York" style="border: 0" width="750" height="600" frameborder="0" scrolling="no"></iframe>
-
-			<p>If you think anything is missing, or you believe some information to be incorrect, contact the Director of Social Engagement via email.</p>
-		</div>
-
-	</body>
+    <head>
+        <title>
+            Kappa Theta Pi
+        </title>
+        <link href="styles/style.css" rel="stylesheet" type="text/css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+        </script>
+        <script src="../scripts/navigation.js">
+        </script>
+    </head>
+    <script type="text/javascript">
+        var theURL = 'https://rhitktpwebsite.herokuapp.com';
+	    $.ajax({
+	        url: theURL + '/login/login/checkLoggedIn',
+	        method: 'POST',
+	        data: {
+	            guid: document.cookie
+	        }
+	    }).done(function (data) {
+	        if (!data.loggedIn) {
+	        	document.location.href = "https://rhitktpwebsite.herokuapp.com/login";
+	        }
+	    });
+    </script>
+    <body ;="" onload="mainNavigation()">
+        <div id="banner">
+            <div id="topbanner">
+                Kappa Theta Pi
+            </div>
+            <div id="bottombanner">
+            </div>
+            <!-- //script hits it -->
+        </div>
+        <div id="contentarea">
+            <p>
+                Below is the calendar of all required and unrequired events hosted by KTP.
+            </p>
+            <iframe frameborder="0" height="600" scrolling="no" src="https://calendar.google.com/calendar/embed?src=tepleyna%40gmail.com&ctz=America/New_York" style="border: 0" width="750">
+            </iframe>
+            <p>
+                If you think anything is missing, or you believe some information to be incorrect, contact the Director of Social Engagement via email.
+            </p>
+        </div>
+    </body>
 </html>
