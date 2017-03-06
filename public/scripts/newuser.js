@@ -26,7 +26,7 @@ $(document).ready(function() {
                     if (/\S/.test($("#name").val()) && /\S/.test($("#username").val()) && /\S/.test($("#password").val())) {
                         
                             $.ajax({
-                                url: url + '/login/login',
+                                url: theURL + '/login/login',
                                 type: "POST",
                                 data: {
                                     username: $("#username").val(),
