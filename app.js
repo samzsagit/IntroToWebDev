@@ -18,6 +18,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('public'));
 app.use('/', pages);
 app.use('/executiveInfo', executives);
+
+//FIXME: links where allows direc database access
 app.use('/posts', posts);
 app.use('/users', users);
 
